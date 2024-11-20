@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Nighty Specials Crispy</title>
+
+    <style>
+      body {
+        background: #008080;
+      }
+      .banner {
+        background: chocolate;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.4rem;
+        color: #008080;
+        font-size: 1.5rem;
+      }
+      .banner span {
+        margin-right: 30px;
+        float: left;
+        color: gray;
+        font-weight: 100;
+      }
+
+      .card-nighty {
+        margin: 5px;
+        border-radius: 8px;
+        border: 1px solid black;
+      }
+      .card-nighty img {
+        border-radius: 8px 8px 0px 0px;
+      }
+      .card-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .card-details-nighty {
+        padding: 8px;
+      }
+
+      .rating-nighty-card {
+        background: chocolate;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 3px;
+      }
+
+      .card-details-nighty .description {
+        margin-top: 15px;
+        font-size: 0.9rem;
+      }
+      .card-details-nighty button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+
+        background: chocolate;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .nighty-cards {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        overflow-y: scroll;
+
+        gap: 20px !important;
+      }
+
+      .price {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      footer {
+        width: 100%;
+        position: sticky;
+        margin-top: 100%;
+        background: chocolate;
+        padding: 0 !important;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      footer button {
+        width: 100%;
+        border: none;
+        border-right: 1px solid black;
+        background: chocolate;
+        padding: 20px;
+      }
+
+      footer a {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="animated">
+    <div class="banner">
+      <h3>
+        <a href="index.html"> <span><</span></a>
+
+        Explore Crispy Nighty Specials
+      </h3>
+    </div>
+    <div class="nighty-cards">
+      <div class="card-nighty">
+        <div class="flex">
+          <img id="img-dish" src="./assets/images/herb-chicken.webp" alt="" />
+          <div class="card-details-nighty">
+            <div class="card-title flex">
+              <div>
+                <h3>Herbed Crusted Chicken</h3>
+                <p class="price">$12.99</p>
+              </div>
+            </div>
+            <p class="description">
+              Tender chicken breast coated with a blend of herbs and spices,
+              served with roasted potatoes and sautéed spinach
+            </p>
+            <button>Make Reservations</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-nighty">
+        <div class="flex">
+          <img id="img-dish" src="./assets/images/tikka.jpeg" alt="" />
+          <div class="card-details-nighty">
+            <div class="card-title flex">
+              <div>
+                <h3>Chicken Tikka Masala</h3>
+
+                <p class="price">$11.99</p>
+              </div>
+            </div>
+            <p class="description">
+              Tender chicken cooked in a rich, creamy tomato sauce, served with
+              basmati rice and naan bread
+            </p>
+            <button>Make Reservations</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-nighty">
+        <div class="flex">
+          <img id="img-dish" src="./assets/images/veg-lasgana.jpg" alt="" />
+          <div class="card-details-nighty">
+            <div class="card-title flex">
+              <div>
+                <h3>Vegetarian Lasagna</h3>
+
+                <p class="price">$9.99</p>
+              </div>
+            </div>
+            <p class="description">
+              Tender chicken cooked in a rich, creamy tomato sauce, served with
+              basmati rice and naan bread
+            </p>
+            <button>Make Reservations</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="./resturant1.html">
+        <button>
+          <img
+            width="20"
+            src="./assets/images/location-svg.svg"
+            alt=""
+          /></button
+      ></a>
+      <a href="#">
+        <button>
+          <img width="20" src="./assets/images/tag.svg" alt="" /></button
+      ></a>
+      <button>
+        <img width="20" src="./assets/images/reserve.svg" alt="" />
+      </button>
+    </footer>
+  </body>
+</html>

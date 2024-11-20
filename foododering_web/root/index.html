@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Project One - Part B" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Project One - Part B</title>
+  </head>
+  <style>
+    .not-mobile {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      main {
+        display: none;
+      }
+
+      .not-mobile {
+        display: block;
+      }
+    }
+
+    .middle {
+      background-color: white !important;
+      margin-top: -50px;
+    }
+
+    .middle img {
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .middle img:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .middle img:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .middle img:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    .middle p {
+      background: #008080;
+      text-align: center;
+      color: #000;
+      padding: 5px;
+      box-shadow: 1px 1px 5px 1px #000;
+      font-size: 0.8rem;
+      width: 250px;
+      border-radius: 5px;
+    }
+
+    #img-sc1 {
+      background: #008080;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    #screen1 p {
+      background: chocolate;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  </style>
+  <body>
+    <main>
+      <section id="screen1">
+        <p>FAMILY OF EATRIES</p>
+        <div id="img-sc1">
+          <img width="300" src="./assets/images/FOE_Logo.svg" alt="" />
+        </div>
+      </section>
+      <section id="screen2">
+        <div class="middle">
+          <p>Select a Resturant</p>
+          <img
+            id="img-border"
+            class="image-second-page"
+            height="100"
+            width="100"
+            src="./assets/images/crispys-logo-svg.svg"
+            alt=""
+          />
+          <img
+            id="img-border"
+            class="image-second-page"
+            height="100"
+            width="100"
+            src="./assets/images/vines-logo-svg.svg"
+            alt=""
+          />
+          <img
+            id="img-border"
+            class="image-second-page mb"
+            height="100"
+            width="100"
+            src="./assets/images/ceviche-logo-svg.svg"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
